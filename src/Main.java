@@ -48,18 +48,21 @@ public class Main {
         //Task 4
         System.out.println("Task 4");
 
-        int deliveryDistance = 101;
+        int deliveryDistance = 100;
         int day = 0;
 
         if (deliveryDistance <= 20) {
             day = 1;
-            System.out.println("Потребуется дней:" + day);
         } else if (deliveryDistance <= 60) {
             day = 2;
-            System.out.println("Потребуется дней:" + day);
         } else if (deliveryDistance <= 100) {
             day = 3;
-            System.out.println("Потребуется дней:" + day);
+        } else {
+            day = -1;
+        }
+
+        if (day != -1) {
+            System.out.println("Петребуется дней: " + day);
         } else {
             System.out.println("Доставки нет");
         }
